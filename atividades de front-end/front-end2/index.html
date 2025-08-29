@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form>
+        <label for="nome"><b>Nome Completo:</b><br></label>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+
+        <label for="senha"><b>Senha:</b><br></label>
+        <input type="password" id="senha" name="senha">
+        <br><br>
+
+        <label for="idade"><b>Idade:</b><br></label>
+        <input type="number" id="idade" name="idade" min="0" max="120">
+        <br><br>
+
+        <label for="nascimento"><b>Data de Nascimento:</b><br></label>
+        <input type="date" id="nascimento" name="nascimento">
+        <br><br>
+
+        <label for="nome"><b>Gênero:</b><br></label>
+        <input type="radio" name="sexo" value="M"> <b>Masculino</b>
+        <br>
+        <input type="radio" name="sexo" value="F"> <b>Feminino</b>
+        <br>
+        <input type="radio" name="sexo" value="O"> <b>Outro</b>
+        <br><br>
+
+        <label for="nome"><b>Interesses:</b><br></label>
+        <input type="checkbox" name="curso" id="curso" value="1">
+        <label><b>HTML</b></label>
+        <br>
+        <input type="checkbox" name="curso" id="curso" value=”2">
+        <label><b>CSS</b></label>
+        <br>
+        <input type="checkbox" name="curso" id="curso" value=”3">
+        <label><b>JavaScript</b></label>
+        <br><br>
+
+        <label for="cidade">Cidade:</label><br>
+        <select name="cidade" id="cidade">
+        <option selected disabled style="background-color: rgb(96, 88, 88);">-- Escolha uma cidade --</option>
+        <option>Fortaleza</option>
+        <option>Maranguape</option>
+        <option>Maracanaú</option>
+        </select>
+        <br><br>
+
+        <label for="mensagem"><b>Mensagem:</b><br></label>
+        <textarea name="mensagem" id = "observacao" rows= "6" cols= "50" >
+        </textarea>
+        <br><br>
+
+        <!-- Upload de arquivo -->
+        <label for="foto"><b>Foto de Perfil:</b><br></label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
